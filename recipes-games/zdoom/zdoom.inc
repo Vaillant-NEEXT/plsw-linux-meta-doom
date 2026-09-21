@@ -30,3 +30,8 @@ RM_WORK_EXCLUDE += "${BPN}-native"
 
 FILES:${PN} += "/usr/share/games"
 RPROVIDES:${PN}:class-target = "zdoom"
+
+# The lemon/re2c generated parsers (zcc-parse.c, xlat_parser.c,
+# sc_man_scanner.h) record the absolute path of their input in #line
+# directives. Those paths only ever reach the debug source package.
+INSANE_SKIP:${PN}-src += "buildpaths"
