@@ -15,8 +15,6 @@ DEPENDS = "\
 SRC_URI = "git://github.com/ZDoom/gzdoom.git;protocol=http;nobranch=1"
 SRCREV = "99aa489d09015a95bb78df2b30ede29f328cc874"
 
-S = "${WORKDIR}/git"
-
 inherit features_check pkgconfig
 
 REQUIRED_DISTRO_FEATURES = "opengl"

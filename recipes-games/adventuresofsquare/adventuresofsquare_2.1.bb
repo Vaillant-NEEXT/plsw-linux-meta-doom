@@ -12,4 +12,4 @@ SRC_URI[sha256sum] = "6cd3167f7d9eeb1ca288997d5a9d7d3a489563e4576ba36a9fc35501c9
 
 inherit zdoom-wad
 
-WADS = "${WORKDIR}/square1.pk3"
+WADS = "${UNPACKDIR}/square1.pk3"

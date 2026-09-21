@@ -20,8 +20,6 @@ PV = "4.14.3+git${SRCPV}"
 SRC_URI = "git://github.com/UZDoom/UZDoom.git;protocol=http;nobranch=1"
 SRCREV = "1cb7598afadbe7ffe753b2eaf1b887e58e988036"
 
-S = "${WORKDIR}/git"
-
 REQUIRED_DISTRO_FEATURES = "opengl wayland"
 
 OECMAKE_ARGS += "\

@@ -13,7 +13,7 @@ SRC_URI[sha256sum] = "4f721795bd219b6870db2f2b67051e0695f6385f02f93a371be50c9cb4
 # URL doesn't end with .zip, so the dependency on unzip isn't picked up automatically
 do_unpack[depends] = "unzip-native:do_populate_sysroot"
 
-S = "${WORKDIR}/Delaweare"
+S = "${UNPACKDIR}/Delaweare"
 
 inherit zdoom-wad
 

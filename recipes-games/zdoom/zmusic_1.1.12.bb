@@ -18,8 +18,6 @@ STAGING_NATIVE_BUILDDIR = "${TMPDIR}/work-shared/native/${BPN}"
 
 B:class-native = "${STAGING_NATIVE_BUILDDIR}"
 
-S = "${WORKDIR}/git"
-
 inherit cmake pkgconfig
 
 EXTRA_OECMAKE:append:class-target = " -DIMPORT_EXECUTABLES=${STAGING_NATIVE_BUILDDIR}/ImportExecutables.cmake"

@@ -13,7 +13,7 @@ SRC_URI[sha256sum] = "efe0f2914858abb3b8131b7479a5d0c3f97a7895c51be21859ed5f4eea
 fix_extract_path() {
     # The upstream zip file has a space, which we do not like
     rm -rf ${S}
-    mv "${WORKDIR}/${BPN} v${PV}" ${S}
+    mv "${UNPACKDIR}/${BPN} v${PV}" ${S}
 }
 do_unpack[postfuncs] += "fix_extract_path"
 

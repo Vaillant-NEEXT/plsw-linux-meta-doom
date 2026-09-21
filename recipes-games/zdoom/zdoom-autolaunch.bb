@@ -16,10 +16,10 @@ REQUIRED_DISTRO_FEATURES = "systemd wayland"
 
 do_install() {
     install -d ${D}${systemd_system_unitdir}
-    install -m 644 ${WORKDIR}/zdoom.service ${D}${systemd_system_unitdir}/
+    install -m 644 ${UNPACKDIR}/zdoom.service ${D}${systemd_system_unitdir}/
 
     install -d ${D}${sysconfdir}/zdoom/
-    install -m 644 ${WORKDIR}/zdoom.ini ${D}${sysconfdir}/zdoom/
+    install -m 644 ${UNPACKDIR}/zdoom.ini ${D}${sysconfdir}/zdoom/
 }
 
 RDEPENDS:${PN} = "weston-init zdoom"
