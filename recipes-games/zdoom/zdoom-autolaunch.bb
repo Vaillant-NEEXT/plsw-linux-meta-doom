@@ -10,6 +10,8 @@ SRC_URI = "\
     file://zdoom.ini \
     "
 
+S = "${UNPACKDIR}"
+
 inherit systemd features_check
 
 REQUIRED_DISTRO_FEATURES = "systemd wayland"
