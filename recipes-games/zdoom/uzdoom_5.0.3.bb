@@ -18,9 +18,9 @@ DEPENDS += "\
     zmusic \
 "
 
-PV = "5.0.1+git${SRCPV}"
+PV = "5.0.3+git${SRCPV}"
 SRC_URI = "git://github.com/UZDoom/UZDoom.git;protocol=http;nobranch=1"
-SRCREV = "b92a83674b76c295a51c2ca21ee9b3085526fecb"
+SRCREV = "7910df7102033fd7754a317f3254f24101135926"
 
 REQUIRED_DISTRO_FEATURES = "opengl wayland"
 
